@@ -49,4 +49,12 @@ const toyota = {
     engine: 2.2,
     color: "white"
 }
-console.log(toyota.make);
+//console.log(toyota.make);
+let country1 = {
+    name: "ethiopia",
+    population: 120000000,
+    currency: "birr",
+    labguage: "amharic"
+
+}
+console.log(country1);
