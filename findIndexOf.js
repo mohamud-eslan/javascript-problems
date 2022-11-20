@@ -13,3 +13,4 @@ function findIndexOf(arr, item){
     }
 }
 console.log(findIndexOf([2]));
+console.log("this is google")
