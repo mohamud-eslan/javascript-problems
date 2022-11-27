@@ -15,5 +15,19 @@ const arr1 =[
        }
     })
   }
+  function mergeArrayObjects(arr1,arr2){
+    let start = 0;
+    let merge = [];
+  
+    while(start < arr1.length){
+      if(arr1[start].id === arr2[start].id){
+           //pushing the merged objects into array
+          merge.push({...arr1[start],...arr2[start]})
+      }
+      //incrementing start value
+      start = start+1
+    }
+    return merge;
+  }
   
   console.log(mergeArrayObjects(arr1,arr2));
