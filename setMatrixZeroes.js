@@ -30,10 +30,11 @@
             matrix[r][i] = 0;
             
         }
+        return setZeros;
 }
 var setZeroes = function(matrix) {
     const zerosA = [];
-    for(let r = 0; r < matrix.length; r++){
+    for(let r = 0; r < matrix.length-1; r++){
         for(let c = 0; c < matrix[0].length; c++){
             if(matrix[r][c] === 0) zerosA.push([r, c]);
         }
@@ -43,5 +44,7 @@ var setZeroes = function(matrix) {
         let col = address[1];
         setZeros(row, col, matrix)
     }
+    return zerosA;
     
 };
+console.log(setZeroes())
