@@ -1,12 +1,13 @@
 function longestWord(str){
     let words = str.split(" ");
-    let word = longest = "";
+    let word = longWord = "";
     for(let word of words){
-        if(word.length > longest.length){
-            longest = word;
+        if(word.length > longWord.length){
+            longWord = word;
         }
     }
-    return longest;
+    return longWord;
 }
-console.log(longestWord('I woke up early today'));
-console.log(longestWord('I love my mother and my father'));
+console.log(longestWord('find the incorrect word'));
+console.log(longestWord('find the incorrect word'));
+console.log(longestWord('find the correct words'));

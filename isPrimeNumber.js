@@ -9,4 +9,8 @@ function isPrime(num){
     }
     return true;
 }
-console.log(isPrime(7)) ;
+console.log(isPrime(120)) ;
+console.log(isPrime(111)) ;
+console.log(isPrime(5)) ;
+console.log(isPrime(8)) ;
+console.log(isPrime(9)) ;
