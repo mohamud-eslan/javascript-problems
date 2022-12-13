@@ -9,3 +9,5 @@ function recursiveFac(n){
 console.log(recursiveFac(0));
 console.log(recursiveFac(1));
 console.log(recursiveFac(5));
+
+//big O = o(n)
