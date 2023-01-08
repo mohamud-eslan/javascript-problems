@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange in javaScript</title>
+</head>
+<body>
+   <p>calculate the deliveries</p>
+   <input type="number" id="tonnes" placeholder="enter tonnes">
+
+   <select name="" id="cities">
+    <option value=""></option>
+    <option value="jijiga">jijiga</option>
+    <option value="qabridahar">qabridahar</option>
+    <option value="godey">godey</option>
+   </select>
+   <h1 id="output"></h1>
+   <script>
+    document.getElementById("cities").onchange = function(){
+        const cities = document.getElementById("cities").value;
+        const tonnes = document.getElementById("tonnes").value;
+        const output = document.getElementById("output");
+        let tonnesInt= parseInt(tonnes);
+
+        let jijiga = "jijiga";
+        let qabridahar = "qabridahar";
+        let godey = "godey";
+
+        if(cities == "jijiga"){
+            total = tonnes * 500;
+            output.innerHTML = total;
+        }
+        if(cities == "qabridahar"){
+            total = tonnes * 800;
+            output.innerHTML = total;
+        }
+        if(cities == "godey"){
+            total = tonnes * 600;
+            output.innerHTML = total;
+        }
+    
+    }
+   </script>
+</body>
+</html>
